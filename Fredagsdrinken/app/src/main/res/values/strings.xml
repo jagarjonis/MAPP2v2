@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Fredagsdrinken 1.0</string>
+    <string name="blandadrinkar">Blanda drinkar</string>
+    <string name="utforskadrinkar">Utforska drinkar</string>
+    <string name="apelsin">Apelsin</string>
+    <string name="citron">Citron</string>
+    <string name="cocacola">Coca Cola</string>
+    <string name="galliano">Galliano</string>
+    <string name="grädde">Grädde</string>
+    <string name="is">Is</string>
+    <string name="kaffe">Kaffe</string>
+    <string name="kahlua">Kahlua</string>
+    <string name="lime">Lime</string>
+    <string name="ljusrom">Ljus Rom</string>
+    <string name="mjolk">Mjölk</string>
+    <string name="sodavatten">Sodavatten</string>
+    <string name="strosocker">Strösocker</string>
+    <string name="te">Te</string>
+    <string name="vatten">Vatten</string>
+    <string name="vodka">Vodka</string>
+    <string name="apple">Äpple</string>
+    <string name="nasta">Nästa</string>
+    <string name="hemmaingredienser">Vad har du redan hemma?</string>
+    <string name="iste">Iste från södern</string>
+    <string name="cubalibre">Cuba Libre</string>
+    <string name="whiterussian">White Russian</string>
+    <string name="skinnybitch">Skinny Bitch</string>
+    <string name="hotshot">Hot Shot</string>
+    <string name="mojito">Mojito</string>
+
+
+</resources>
