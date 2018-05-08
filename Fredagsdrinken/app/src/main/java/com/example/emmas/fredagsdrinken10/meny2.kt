@@ -1,5 +1,6 @@
 package com.example.emmas.fredagsdrinken10
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
@@ -14,40 +15,69 @@ class meny2 : AppCompatActivity() {
     var skinnybitch = false
     var hotshot = false
     var mojito = false
+    var isterecept = false
+    var skinnybitchrecept = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meny2)
 
-        checkBox26.setVisibility(View.GONE)
-        checkBox27.setVisibility(View.GONE)
-        checkBox28.setVisibility(View.GONE)
-        checkBox29.setVisibility(View.GONE)
-        checkBox30.setVisibility(View.GONE)
-        checkBox31.setVisibility(View.GONE)
-
+        checkBox26.visibility = View.GONE
+        checkBox27.visibility = View.GONE
+        checkBox28.visibility = View.GONE
+        checkBox29.visibility = View.GONE
+        checkBox30.visibility = View.GONE
+        checkBox31.visibility = View.GONE
+        nasta2.visibility = View.GONE
+        Alternativ1.visibility = View.GONE
+        Alternativ4.visibility = View.GONE
 
         nasta1.setOnClickListener{
 
-            ScrollView1.setVisibility(View.GONE)
-            if (iste == true) {
-                checkBox26.setVisibility(View.VISIBLE)
+            ScrollView1.visibility = View.GONE
+            nasta1.visibility = View.GONE
+            nasta2.visibility = View.VISIBLE
+
+            if (iste) {
+                checkBox26.visibility = View.VISIBLE
             }
-            if (cubalibre == true) {
-                checkBox27.setVisibility(View.VISIBLE)
+            if (cubalibre) {
+                checkBox27.visibility = View.VISIBLE
             }
-            if (whiterussian == true) {
-                checkBox28.setVisibility(View.VISIBLE)
+            if (whiterussian) {
+                checkBox28.visibility = View.VISIBLE
             }
-            if (skinnybitch == true) {
-                checkBox29.setVisibility(View.VISIBLE)
+            if (skinnybitch) {
+                checkBox29.visibility = View.VISIBLE
             }
-            if (hotshot == true) {
-                checkBox30.setVisibility(View.VISIBLE)
+            if (hotshot) {
+                checkBox30.visibility = View.VISIBLE
             }
-            if (mojito == true) {
-                checkBox31.setVisibility(View.VISIBLE)
+            if (mojito) {
+                checkBox31.visibility = View.VISIBLE
             }
+        }
+        nasta2.setOnClickListener{
+            ScrollView2.visibility = View.GONE
+            nasta2.visibility = View.GONE
+
+            if (isterecept) {
+                Alternativ1.visibility = View.VISIBLE
+
+            }
+
+            if (skinnybitchrecept) {
+                Alternativ4.visibility = View.VISIBLE
+            }
+
+        }
+        Alternativ1.setOnClickListener{
+            val intent1 = Intent(this, Iste::class.java)
+            startActivity(intent1)
+        }
+        Alternativ4.setOnClickListener{
+            val intent1 = Intent(this, SkinnyBitch::class.java)
+            startActivity(intent1)
         }
 
         val checkBox9 = findViewById<CheckBox>(R.id.checkBox9)
@@ -190,6 +220,22 @@ class meny2 : AppCompatActivity() {
         checkBox25.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 hotshot = true
+            }
+
+
+        }
+        val checkBox26 = findViewById<CheckBox>(R.id.checkBox26)
+        checkBox26.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                isterecept = true
+            }
+
+
+        }
+        val checkBox29 = findViewById<CheckBox>(R.id.checkBox29)
+        checkBox29.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                skinnybitchrecept = true
             }
 
 
