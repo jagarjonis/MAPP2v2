@@ -7,46 +7,69 @@
     android:background="#f38630"
     tools:context=".meny2">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="294dp"
-        android:layout_height="59dp"
+    <ScrollView
+        android:id="@+id/ScrollView2"
+        android:layout_width="395dp"
+        android:layout_height="494dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/hemmaingredienser"
-        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/nasta1"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="112dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="#a7dbd8"
-        android:text="@string/nasta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.962" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/iste"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cubalibre"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/whiterussian"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/skinnybitch"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hotshot"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mojito"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </ScrollView>
 
     <ScrollView
+        android:id="@+id/ScrollView1"
         android:layout_width="395dp"
         android:layout_height="494dp"
         android:layout_marginBottom="8dp"
@@ -185,48 +208,46 @@
                 android:text="@string/apple"
                 android:textSize="30sp" />
 
-            <CheckBox
-                android:id="@+id/checkBox26"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/iste"
-                android:textSize="30sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox27"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/cubalibre"
-                android:textSize="30sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox28"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/whiterussian"
-                android:textSize="30sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox29"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/skinnybitch"
-                android:textSize="30sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox30"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hotshot"
-                android:textSize="30sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox31"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/mojito"
-                android:textSize="30sp" />
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/nasta1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="112dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#a7dbd8"
+        android:text="@string/nasta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="294dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/hemmaingredienser"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
 
 </android.support.constraint.ConstraintLayout>

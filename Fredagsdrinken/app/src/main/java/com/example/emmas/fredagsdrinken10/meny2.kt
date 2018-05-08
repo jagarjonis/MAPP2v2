@@ -26,26 +26,10 @@ class meny2 : AppCompatActivity() {
         checkBox30.setVisibility(View.GONE)
         checkBox31.setVisibility(View.GONE)
 
+
         nasta1.setOnClickListener{
-          //  val intent2 = Intent(this, drinkforslag::class.java)
-            //startActivity(intent2)
-            checkBox9.setVisibility(View.GONE)
-            checkBox10.setVisibility(View.GONE)
-            checkBox11.setVisibility(View.GONE)
-            checkBox12.setVisibility(View.GONE)
-            checkBox13.setVisibility(View.GONE)
-            checkBox14.setVisibility(View.GONE)
-            checkBox15.setVisibility(View.GONE)
-            checkBox16.setVisibility(View.GONE)
-            checkBox17.setVisibility(View.GONE)
-            checkBox18.setVisibility(View.GONE)
-            checkBox19.setVisibility(View.GONE)
-            checkBox20.setVisibility(View.GONE)
-            checkBox21.setVisibility(View.GONE)
-            checkBox22.setVisibility(View.GONE)
-            checkBox23.setVisibility(View.GONE)
-            checkBox24.setVisibility(View.GONE)
-            checkBox25.setVisibility(View.GONE)
+
+            ScrollView1.setVisibility(View.GONE)
             if (iste == true) {
                 checkBox26.setVisibility(View.VISIBLE)
             }
@@ -99,7 +83,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox13 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox13 = findViewById<CheckBox>(R.id.checkBox13)
         checkBox13.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 hotshot = true
@@ -107,7 +91,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox14 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox14 = findViewById<CheckBox>(R.id.checkBox14)
         checkBox14.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 mojito = true
@@ -116,7 +100,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox15 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox15 = findViewById<CheckBox>(R.id.checkBox15)
         checkBox15.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 skinnybitch = true
@@ -125,7 +109,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox16 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox16 = findViewById<CheckBox>(R.id.checkBox16)
         checkBox16.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 iste = true
@@ -133,7 +117,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox17 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox17 = findViewById<CheckBox>(R.id.checkBox17)
         checkBox17.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 whiterussian = true
@@ -141,7 +125,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox18 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox18 = findViewById<CheckBox>(R.id.checkBox18)
         checkBox18.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 iste = true
@@ -149,7 +133,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox19 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox19 = findViewById<CheckBox>(R.id.checkBox19)
         checkBox19.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 iste = true
@@ -157,7 +141,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox20 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox20 = findViewById<CheckBox>(R.id.checkBox20)
         checkBox20.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 iste = true
@@ -166,7 +150,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox21 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox21 = findViewById<CheckBox>(R.id.checkBox21)
         checkBox21.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 whiterussian = true
@@ -176,7 +160,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox22 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox22 = findViewById<CheckBox>(R.id.checkBox22)
         checkBox22.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 whiterussian = true
@@ -184,7 +168,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox23 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox23 = findViewById<CheckBox>(R.id.checkBox23)
         checkBox23.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 cubalibre = true
@@ -194,7 +178,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox24 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox24 = findViewById<CheckBox>(R.id.checkBox24)
         checkBox24.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 whiterussian = true
@@ -202,7 +186,7 @@ class meny2 : AppCompatActivity() {
 
 
         }
-        val checkBox25 = findViewById<CheckBox>(R.id.checkBox12)
+        val checkBox25 = findViewById<CheckBox>(R.id.checkBox25)
         checkBox25.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 hotshot = true
