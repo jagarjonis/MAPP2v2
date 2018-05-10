@@ -8,8 +8,8 @@ import android.widget.CheckBox
 import kotlinx.android.synthetic.main.activity_meny2.*
 
 class meny2 : AppCompatActivity() {
-    var isteingrid
-    val antalingrid = isteingrid.toString() + "/" + 5
+    var isteingrid = 0
+    val antalingrid = isteingrid.toString() + "/" + "5"
     var iste = false
     var whiterussian = false
     var cubalibre = false
