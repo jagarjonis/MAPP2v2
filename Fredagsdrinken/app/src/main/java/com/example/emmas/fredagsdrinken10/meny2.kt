@@ -8,7 +8,8 @@ import android.widget.CheckBox
 import kotlinx.android.synthetic.main.activity_meny2.*
 
 class meny2 : AppCompatActivity() {
-
+    var isteingrid
+    val antalingrid = isteingrid.toString() + "/" + 5
     var iste = false
     var whiterussian = false
     var cubalibre = false
@@ -16,7 +17,11 @@ class meny2 : AppCompatActivity() {
     var hotshot = false
     var mojito = false
     var isterecept = false
+    var cubalibrerecept = false
+    var whiterussianrecept = false
     var skinnybitchrecept = false
+    var hotshotrecept = false
+    var mojitorecept = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,13 +35,18 @@ class meny2 : AppCompatActivity() {
         checkBox31.visibility = View.GONE
         nasta2.visibility = View.GONE
         Alternativ1.visibility = View.GONE
+        Alternativ2.visibility = View.GONE
+        Alternativ3.visibility = View.GONE
         Alternativ4.visibility = View.GONE
+        Alternativ5.visibility = View.GONE
+        Alternativ6.visibility = View.GONE
 
         nasta1.setOnClickListener{
 
             ScrollView1.visibility = View.GONE
             nasta1.visibility = View.GONE
             nasta2.visibility = View.VISIBLE
+            println(antalingrid)
 
             if (iste) {
                 checkBox26.visibility = View.VISIBLE
@@ -63,11 +73,26 @@ class meny2 : AppCompatActivity() {
 
             if (isterecept) {
                 Alternativ1.visibility = View.VISIBLE
+            }
 
+            if (cubalibrerecept) {
+                Alternativ2.visibility = View.VISIBLE
+            }
+
+            if (whiterussianrecept) {
+                Alternativ3.visibility = View.VISIBLE
             }
 
             if (skinnybitchrecept) {
                 Alternativ4.visibility = View.VISIBLE
+            }
+
+            if (hotshotrecept) {
+                Alternativ5.visibility = View.VISIBLE
+            }
+
+            if (mojitorecept) {
+                Alternativ6.visibility = View.VISIBLE
             }
 
         }
@@ -75,15 +100,33 @@ class meny2 : AppCompatActivity() {
             val intent1 = Intent(this, Iste::class.java)
             startActivity(intent1)
         }
+        Alternativ2.setOnClickListener{
+            val intent2 = Intent(this, Cubalibre::class.java)
+            startActivity(intent2)
+        }
+        Alternativ3.setOnClickListener{
+            val intent3 = Intent(this, Whiterussian::class.java)
+            startActivity(intent3)
+        }
         Alternativ4.setOnClickListener{
             val intent1 = Intent(this, SkinnyBitch::class.java)
             startActivity(intent1)
+        }
+        Alternativ5.setOnClickListener{
+            val intent5 = Intent(this, Hotshot::class.java)
+            startActivity(intent5)
+        }
+        Alternativ6.setOnClickListener{
+            val intent6 = Intent(this, Mojito::class.java)
+            startActivity(intent6)
         }
 
         val checkBox9 = findViewById<CheckBox>(R.id.checkBox9)
         checkBox9.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 iste = true
+                isteingrid.inc()
+
             }
 
 
@@ -232,6 +275,22 @@ class meny2 : AppCompatActivity() {
 
 
         }
+        val checkBox27 = findViewById<CheckBox>(R.id.checkBox27)
+        checkBox27.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                cubalibrerecept = true
+            }
+
+
+        }
+        val checkBox28 = findViewById<CheckBox>(R.id.checkBox28)
+        checkBox28.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                whiterussianrecept = true
+            }
+
+
+        }
         val checkBox29 = findViewById<CheckBox>(R.id.checkBox29)
         checkBox29.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
@@ -240,6 +299,21 @@ class meny2 : AppCompatActivity() {
 
 
         }
+        val checkBox30 = findViewById<CheckBox>(R.id.checkBox30)
+        checkBox30.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                hotshotrecept = true
+            }
 
+
+        }
+        val checkBox31 = findViewById<CheckBox>(R.id.checkBox31)
+        checkBox31.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                mojitorecept = true
+            }
+
+
+        }
     }
 }
