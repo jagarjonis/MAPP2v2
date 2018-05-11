@@ -6,17 +6,10 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.CheckBox
 import kotlinx.android.synthetic.main.activity_meny2.*
-import android.widget.TextView
-
-
 
 class meny2 : AppCompatActivity() {
     var isteingrid = 0
-<<<<<<< HEAD
     val antalingrid = isteingrid.toString() + "/" + "5"
-=======
-    var antalisteingrid = ""
->>>>>>> 3abc1ef6fb684350541526ed304a0abb6671e234
     var iste = false
     var whiterussian = false
     var cubalibre = false
@@ -53,9 +46,7 @@ class meny2 : AppCompatActivity() {
             ScrollView1.visibility = View.GONE
             nasta1.visibility = View.GONE
             nasta2.visibility = View.VISIBLE
-            println(antalisteingrid)
-            val textView = findViewById(R.id.textView5) as TextView
-            textView.text = (antalisteingrid)
+            println(antalingrid)
 
             if (iste) {
                 checkBox26.visibility = View.VISIBLE
@@ -134,8 +125,7 @@ class meny2 : AppCompatActivity() {
         checkBox9.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
+                isteingrid.inc()
 
             }
 
@@ -146,8 +136,6 @@ class meny2 : AppCompatActivity() {
         checkBox10.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
             }
 
 
@@ -198,8 +186,6 @@ class meny2 : AppCompatActivity() {
         checkBox16.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
             }
 
 
@@ -216,8 +202,6 @@ class meny2 : AppCompatActivity() {
         checkBox18.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
             }
 
 
@@ -226,8 +210,6 @@ class meny2 : AppCompatActivity() {
         checkBox19.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
             }
 
 
@@ -236,8 +218,6 @@ class meny2 : AppCompatActivity() {
         checkBox20.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
                 mojito = true
             }
 
@@ -249,8 +229,6 @@ class meny2 : AppCompatActivity() {
                 whiterussian = true
                 cubalibre = true
                 iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
             }
 
 
