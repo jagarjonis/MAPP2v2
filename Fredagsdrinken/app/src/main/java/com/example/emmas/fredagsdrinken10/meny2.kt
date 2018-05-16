@@ -12,11 +12,17 @@ import android.widget.TextView
 
 class meny2 : AppCompatActivity() {
     var isteingrid = 0
-<<<<<<< HEAD
-    val antalingrid = isteingrid.toString() + "/" + "5"
-=======
     var antalisteingrid = ""
->>>>>>> 3abc1ef6fb684350541526ed304a0abb6671e234
+    var wringrid = 0
+    var antalwringrid = ""
+    var clingrid = 0
+    var antalclingrid = ""
+    var sbingrid = 0
+    var antalsbingrid = ""
+    var hsingrid = 0
+    var antalhsingrid = ""
+    var mojitoingrid = 0
+    var antalmojitoingrid = ""
     var iste = false
     var whiterussian = false
     var cubalibre = false
@@ -54,8 +60,18 @@ class meny2 : AppCompatActivity() {
             nasta1.visibility = View.GONE
             nasta2.visibility = View.VISIBLE
             println(antalisteingrid)
-            val textView = findViewById(R.id.textView5) as TextView
-            textView.text = (antalisteingrid)
+            val textView5 = findViewById(R.id.textView5) as TextView
+            textView5.text = (antalisteingrid)
+            val textView6 = findViewById(R.id.textView6) as TextView
+            textView6.text = (antalclingrid)
+            val textView7 = findViewById(R.id.textView7) as TextView
+            textView7.text = (antalwringrid)
+            val textView8 = findViewById(R.id.textView8) as TextView
+            textView8.text = (antalsbingrid)
+            val textView9 = findViewById(R.id.textView9) as TextView
+            textView9.text = (antalhsingrid)
+            val textView10 = findViewById(R.id.textView10) as TextView
+            textView10.text = (antalmojitoingrid)
 
             if (iste) {
                 checkBox26.visibility = View.VISIBLE
@@ -156,6 +172,8 @@ class meny2 : AppCompatActivity() {
         checkBox11.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 cubalibre = true
+                clingrid++
+                antalclingrid = clingrid.toString() + "/" + 7
             }
 
 
@@ -164,6 +182,8 @@ class meny2 : AppCompatActivity() {
         checkBox12.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 hotshot = true
+                hsingrid++
+                antalhsingrid = hsingrid.toString() + "/" + 7
             }
 
 
@@ -172,6 +192,8 @@ class meny2 : AppCompatActivity() {
         checkBox13.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 hotshot = true
+                hsingrid++
+                antalhsingrid = hsingrid.toString() + "/" + 7
             }
 
 
@@ -181,6 +203,10 @@ class meny2 : AppCompatActivity() {
             if (isChecked) {
                 mojito = true
                 cubalibre = true
+                clingrid++
+                antalclingrid = clingrid.toString() + "/" + 7
+                mojitoingrid++
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 7
             }
 
 
@@ -189,7 +215,11 @@ class meny2 : AppCompatActivity() {
         checkBox15.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 skinnybitch = true
+                sbingrid++
+                antalsbingrid = sbingrid.toString() + "/" + 7
                 mojito = true
+                mojitoingrid++
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 7
             }
 
 
@@ -208,6 +238,8 @@ class meny2 : AppCompatActivity() {
         checkBox17.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 whiterussian = true
+                wringrid++
+                antalwringrid = wringrid.toString() + "/" + 7
             }
 
 
@@ -239,6 +271,8 @@ class meny2 : AppCompatActivity() {
                 isteingrid++
                 antalisteingrid = isteingrid.toString() + "/" + 7
                 mojito = true
+                mojitoingrid++
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 7
             }
 
 
@@ -251,6 +285,10 @@ class meny2 : AppCompatActivity() {
                 iste = true
                 isteingrid++
                 antalisteingrid = isteingrid.toString() + "/" + 7
+                clingrid++
+                antalclingrid = clingrid.toString() + "/" + 7
+                wringrid++
+                antalwringrid = wringrid.toString() + "/" + 7
             }
 
 
@@ -259,6 +297,8 @@ class meny2 : AppCompatActivity() {
         checkBox22.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 whiterussian = true
+                wringrid++
+                antalwringrid = wringrid.toString() + "/" + 7
             }
 
 
@@ -269,6 +309,12 @@ class meny2 : AppCompatActivity() {
                 cubalibre = true
                 skinnybitch = true
                 mojito = true
+                clingrid++
+                antalclingrid = clingrid.toString() + "/" + 7
+                mojitoingrid++
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 7
+                sbingrid++
+                antalsbingrid = sbingrid.toString() + "/" + 7
             }
 
 
@@ -277,6 +323,8 @@ class meny2 : AppCompatActivity() {
         checkBox24.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 whiterussian = true
+                wringrid++
+                antalwringrid = wringrid.toString() + "/" + 7
             }
 
 
@@ -285,6 +333,10 @@ class meny2 : AppCompatActivity() {
         checkBox25.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 hotshot = true
+                hsingrid++
+                antalhsingrid = hsingrid.toString() + "/" + 7
+                sbingrid++
+                antalsbingrid = sbingrid.toString() + "/" + 7
             }
 
 
