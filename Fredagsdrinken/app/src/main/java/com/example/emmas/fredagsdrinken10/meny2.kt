@@ -40,6 +40,12 @@ class meny2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meny2)
 
+        textView5.visibility = View.GONE
+        textView6.visibility = View.GONE
+        textView7.visibility = View.GONE
+        textView8.visibility = View.GONE
+        textView9.visibility = View.GONE
+        textView10.visibility = View.GONE
         checkBox26.visibility = View.GONE
         checkBox27.visibility = View.GONE
         checkBox28.visibility = View.GONE
@@ -75,26 +81,38 @@ class meny2 : AppCompatActivity() {
 
             if (iste) {
                 checkBox26.visibility = View.VISIBLE
+                textView5.visibility = View.VISIBLE
             }
             if (cubalibre) {
                 checkBox27.visibility = View.VISIBLE
+                textView6.visibility = View.VISIBLE
             }
             if (whiterussian) {
                 checkBox28.visibility = View.VISIBLE
+                textView7.visibility = View.VISIBLE
             }
             if (skinnybitch) {
                 checkBox29.visibility = View.VISIBLE
+                textView8.visibility = View.VISIBLE
             }
             if (hotshot) {
                 checkBox30.visibility = View.VISIBLE
+                textView9.visibility = View.VISIBLE
             }
             if (mojito) {
                 checkBox31.visibility = View.VISIBLE
+                textView10.visibility = View.VISIBLE
             }
         }
         nasta2.setOnClickListener{
             ScrollView2.visibility = View.GONE
             nasta2.visibility = View.GONE
+            textView5.visibility = View.GONE
+            textView6.visibility = View.GONE
+            textView7.visibility = View.GONE
+            textView8.visibility = View.GONE
+            textView9.visibility = View.GONE
+            textView10.visibility = View.GONE
 
             if (isterecept) {
                 Alternativ1.visibility = View.VISIBLE
@@ -119,6 +137,7 @@ class meny2 : AppCompatActivity() {
             if (mojitorecept) {
                 Alternativ6.visibility = View.VISIBLE
             }
+
 
         }
         Alternativ1.setOnClickListener{
@@ -173,7 +192,7 @@ class meny2 : AppCompatActivity() {
             if (isChecked) {
                 cubalibre = true
                 clingrid++
-                antalclingrid = clingrid.toString() + "/" + 7
+                antalclingrid = clingrid.toString() + "/" + 5
             }
 
 
@@ -183,7 +202,7 @@ class meny2 : AppCompatActivity() {
             if (isChecked) {
                 hotshot = true
                 hsingrid++
-                antalhsingrid = hsingrid.toString() + "/" + 7
+                antalhsingrid = hsingrid.toString() + "/" + 3
             }
 
 
@@ -193,7 +212,7 @@ class meny2 : AppCompatActivity() {
             if (isChecked) {
                 hotshot = true
                 hsingrid++
-                antalhsingrid = hsingrid.toString() + "/" + 7
+                antalhsingrid = hsingrid.toString() + "/" + 3
             }
 
 
@@ -204,9 +223,9 @@ class meny2 : AppCompatActivity() {
                 mojito = true
                 cubalibre = true
                 clingrid++
-                antalclingrid = clingrid.toString() + "/" + 7
+                antalclingrid = clingrid.toString() + "/" + 5
                 mojitoingrid++
-                antalmojitoingrid = mojitoingrid.toString() + "/" + 7
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 5
             }
 
 
@@ -216,10 +235,10 @@ class meny2 : AppCompatActivity() {
             if (isChecked) {
                 skinnybitch = true
                 sbingrid++
-                antalsbingrid = sbingrid.toString() + "/" + 7
+                antalsbingrid = sbingrid.toString() + "/" + 3
                 mojito = true
                 mojitoingrid++
-                antalmojitoingrid = mojitoingrid.toString() + "/" + 7
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 5
             }
 
 
@@ -239,7 +258,10 @@ class meny2 : AppCompatActivity() {
             if (isChecked) {
                 whiterussian = true
                 wringrid++
-                antalwringrid = wringrid.toString() + "/" + 7
+                antalwringrid = wringrid.toString() + "/" + 4
+                skinnybitch = true
+                sbingrid++
+                antalsbingrid = sbingrid.toString() + "/" + 3
             }
 
 
@@ -272,7 +294,7 @@ class meny2 : AppCompatActivity() {
                 antalisteingrid = isteingrid.toString() + "/" + 7
                 mojito = true
                 mojitoingrid++
-                antalmojitoingrid = mojitoingrid.toString() + "/" + 7
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 5
             }
 
 
@@ -286,9 +308,9 @@ class meny2 : AppCompatActivity() {
                 isteingrid++
                 antalisteingrid = isteingrid.toString() + "/" + 7
                 clingrid++
-                antalclingrid = clingrid.toString() + "/" + 7
+                antalclingrid = clingrid.toString() + "/" + 5
                 wringrid++
-                antalwringrid = wringrid.toString() + "/" + 7
+                antalwringrid = wringrid.toString() + "/" + 4
             }
 
 
@@ -298,7 +320,7 @@ class meny2 : AppCompatActivity() {
             if (isChecked) {
                 whiterussian = true
                 wringrid++
-                antalwringrid = wringrid.toString() + "/" + 7
+                antalwringrid = wringrid.toString() + "/" + 4
             }
 
 
@@ -310,11 +332,11 @@ class meny2 : AppCompatActivity() {
                 skinnybitch = true
                 mojito = true
                 clingrid++
-                antalclingrid = clingrid.toString() + "/" + 7
+                antalclingrid = clingrid.toString() + "/" + 5
                 mojitoingrid++
-                antalmojitoingrid = mojitoingrid.toString() + "/" + 7
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 5
                 sbingrid++
-                antalsbingrid = sbingrid.toString() + "/" + 7
+                antalsbingrid = sbingrid.toString() + "/" + 3
             }
 
 
@@ -324,7 +346,7 @@ class meny2 : AppCompatActivity() {
             if (isChecked) {
                 whiterussian = true
                 wringrid++
-                antalwringrid = wringrid.toString() + "/" + 7
+                antalwringrid = wringrid.toString() + "/" + 4
             }
 
 
@@ -334,9 +356,9 @@ class meny2 : AppCompatActivity() {
             if (isChecked) {
                 hotshot = true
                 hsingrid++
-                antalhsingrid = hsingrid.toString() + "/" + 7
+                antalhsingrid = hsingrid.toString() + "/" + 3
                 sbingrid++
-                antalsbingrid = sbingrid.toString() + "/" + 7
+                antalsbingrid = sbingrid.toString() + "/" + 3
             }
 
 

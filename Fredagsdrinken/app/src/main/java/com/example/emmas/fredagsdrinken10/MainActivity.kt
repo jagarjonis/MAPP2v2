@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, meny2::class.java)
             startActivity(intent)
         }
+        btn2.setOnClickListener{
+            val intent2 = Intent(this, Utforskadrinkar::class.java)
+            startActivity(intent2)
+        }
     }
 }
 

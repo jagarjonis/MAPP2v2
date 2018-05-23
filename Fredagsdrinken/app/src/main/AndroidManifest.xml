@@ -23,7 +23,8 @@
         <activity android:name=".Cubalibre" />
         <activity android:name=".Whiterussian" />
         <activity android:name=".Hotshot" />
-        <activity android:name=".Mojito"></activity>
+        <activity android:name=".Mojito" />
+        <activity android:name=".Utforskadrinkar"></activity>
     </application>
 
 </manifest>
