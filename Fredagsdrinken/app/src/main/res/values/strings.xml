@@ -33,6 +33,8 @@
     <string name="textView8"></string>
     <string name="textView9"></string>
     <string name="textView10"></string>
-
+    <string name="receptSB">1. Fyll ett glas med isbitar.\n2. Lägg till alla ingredienser.\n3. Pressa ned lime.</string>
+    <string name="ingridSB">4 cl vodka\n10 cl sodavatten\n2 st limeklyftor
+</string>
 
 </resources>
