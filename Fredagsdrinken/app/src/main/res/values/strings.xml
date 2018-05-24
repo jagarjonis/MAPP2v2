@@ -34,12 +34,9 @@
     <string name="textView9"></string>
     <string name="textView10"></string>
     <string name="receptSB">1. Fyll ett glas med isbitar.\n2. Lägg till alla ingredienser.\n3. Pressa ned lime.</string>
-<<<<<<< HEAD
     <string name="ingridSB">4 cl vodka\n10 cl sodavatten\n2 st limeklyftor</string>
     <string name="receptiste">1. Koka upp vatten och brygg starkt te. Häll i socker och rör tills det löser sig.\n2. Tvätta citron, apelsin och äpple och skiva tunt.\n3. Lägg frukten i en glaskaraff och fyll på med te. Ställ in kylen och låt svalna i cirka två timmar.\n4. Ta ut det kalla teet ur kylen, fyll på kannan med isbitar och eventuellt lite kallt vatten.</string>
     <string name="ingridiste">Is\n1l vatten\n2 msk te\n2 msk strösocker\n1 st citron\n1 st apelsin\n1 st äpple</string>
-=======
-    <string name="ingridSB">4 cl Vodka\n10 cl Sodavatten\n2 st Limeklyftor </string>
     <string name="receptHS">1. Skiktas med hjälp av sked. </string>
     <string name="ingridHS">2,5 cl Galliano \n2,5 cl Kaffe, hett \nGrädde, vispad</string>
     <string name="receptWR">1. Fyll glaset med is. \n2. Häll på vodka och kalúha. \n3. Fyll upp med mjölk och rör om.</string>
@@ -49,9 +46,6 @@
     <string name="ingridCL">Is \n2 st Limeklyftor \n10 cl Coca cola \n4 cl Ljus rom </string>
     <string name="receptm">1. Häll sockerlag och limejuice i ett highball glas. Mortla myntan i limeblandningen.
         \n2. Fyll på med ljus rom,rikligt med is och toppa med sodavatten. \n3. Garnera med myntakvist.</string>
-    <string name="ingridm">1/2 Lime \n6 cl Vit rom \n1 msk Sockerlag \n6 st Myntablad</string>
-
-
->>>>>>> 0877554295f23742133dabeb1e0f59dcf47edfe7
+    <string name="ingridm">Is\n1/2 Lime \n6 cl Vit rom \n1 msk Sockerlag \n6 st Myntablad\n10 cl sodavatten</string>
 
 </resources>
