@@ -34,7 +34,8 @@
     <string name="textView9"></string>
     <string name="textView10"></string>
     <string name="receptSB">1. Fyll ett glas med isbitar.\n2. Lägg till alla ingredienser.\n3. Pressa ned lime.</string>
-    <string name="ingridSB">4 cl vodka\n10 cl sodavatten\n2 st limeklyftor
-</string>
+    <string name="ingridSB">4 cl vodka\n10 cl sodavatten\n2 st limeklyftor</string>
+    <string name="receptiste">1. Koka upp vatten och brygg starkt te. Häll i socker och rör tills det löser sig.\n2. Tvätta citron, apelsin och äpple och skiva tunt.\n3. Lägg frukten i en glaskaraff och fyll på med te. Ställ in kylen och låt svalna i cirka två timmar.\n4. Ta ut det kalla teet ur kylen, fyll på kannan med isbitar och eventuellt lite kallt vatten.</string>
+    <string name="ingridiste">Is\n1l vatten\n2 msk te\n2 msk strösocker\n1 st citron\n1 st apelsin\n1 st äpple</string>
 
 </resources>
