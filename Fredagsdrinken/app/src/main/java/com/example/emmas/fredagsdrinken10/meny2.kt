@@ -65,7 +65,8 @@ class meny2 : AppCompatActivity() {
             ScrollView1.visibility = View.GONE
             nasta1.visibility = View.GONE
             nasta2.visibility = View.VISIBLE
-            println(antalisteingrid)
+            textView.visibility = View.GONE
+
             val textView5 = findViewById(R.id.textView5) as TextView
             textView5.text = (antalisteingrid)
             val textView6 = findViewById(R.id.textView6) as TextView

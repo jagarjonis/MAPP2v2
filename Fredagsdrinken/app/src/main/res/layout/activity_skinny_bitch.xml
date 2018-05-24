@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f38630"
+    android:background="@drawable/blackmarble"
     tools:context=".SkinnyBitch">
 
     <ScrollView
@@ -37,8 +37,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="440dp"
                 android:text="Skinny Bitch"
-                android:textColor="@android:color/white"
+                android:textColor="#f9ece4"
                 android:textSize="30sp"
+                app:fontFamily="serif"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,12 +53,12 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="500dp"
                 android:adjustViewBounds="false"
+                android:background="#f9ece4"
                 android:cropToPadding="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.082"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView4"
-                app:srcCompat="@android:color/background_light" />
+                app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
             <TextView
                 android:id="@+id/textView12"
@@ -138,5 +139,13 @@
                 app:layout_constraintTop_toTopOf="@+id/imageView7" />
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="413dp"
+        android:layout_height="229dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/skugga" />
 
 </android.support.constraint.ConstraintLayout>
