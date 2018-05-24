@@ -34,10 +34,18 @@
     <string name="textView9"></string>
     <string name="textView10"></string>
     <string name="receptSB">1. Fyll ett glas med isbitar.\n2. Lägg till alla ingredienser.\n3. Pressa ned lime.</string>
-    <string name="ingridSB">4 cl vodka\n10 cl sodavatten\n2 st limeklyftor </string>
+    <string name="ingridSB">4 cl Vodka\n10 cl Sodavatten\n2 st Limeklyftor </string>
     <string name="receptHS">1. Skiktas med hjälp av sked. </string>
-    <string name="ingridHS">2,5 cl Galliano \n2,5 cl kaffe, hett \nGrädde, vispad</string>
+    <string name="ingridHS">2,5 cl Galliano \n2,5 cl Kaffe, hett \nGrädde, vispad</string>
     <string name="receptWR">1. Fyll glaset med is. \n2. Häll på vodka och kalúha. \n3. Fyll upp med mjölk och rör om.</string>
-    <string name="ingridWR">Is \n10 cl mjölk \n3 cl vodka \n3 cl Kahlúa</string>
+    <string name="ingridWR">Is \n10 cl Mjölk \n3 cl Vodka \n3 cl Kahlúa</string>
+    <string name="receptCL">1. Fyll ett grogglas med krossad is. \n2. Häll i rom och cola, rör om.
+        \n3. Pressa Limeklyftor över toppen och lägg därefter skalen i glaset, rör om igen. \n4. Servera med sugrör.</string>
+    <string name="ingridCL">Is \n2 st Limeklyftor \n10 cl Coca cola \n4 cl Ljus rom </string>
+    <string name="receptm">1. Häll sockerlag och limejuice i ett highball glas. Mortla myntan i limeblandningen.
+        \n2. Fyll på med ljus rom,rikligt med is och toppa med sodavatten. \n3. Garnera med myntakvist.</string>
+    <string name="ingridm">1/2 Lime \n6 cl Vit rom \n1 msk Sockerlag \n6 st Myntablad</string>
+
+
 
 </resources>

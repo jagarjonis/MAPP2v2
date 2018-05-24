@@ -27,7 +27,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/skinnybitch" />
+                app:srcCompat="@drawable/mojito" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -36,7 +36,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="440dp"
-                android:text="Skinny Bitch"
+                android:text="@string/mojito"
                 android:textColor="#f9ece4"
                 android:textSize="30sp"
                 app:fontFamily="serif"
@@ -130,7 +130,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="192dp"
                 android:lineSpacingExtra="8sp"
-                android:text="@string/receptSB"
+                android:text="@string/receptm"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView7"
