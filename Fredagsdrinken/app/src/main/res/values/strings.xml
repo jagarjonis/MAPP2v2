@@ -34,7 +34,10 @@
     <string name="textView9"></string>
     <string name="textView10"></string>
     <string name="receptSB">1. Fyll ett glas med isbitar.\n2. Lägg till alla ingredienser.\n3. Pressa ned lime.</string>
-    <string name="ingridSB">4 cl vodka\n10 cl sodavatten\n2 st limeklyftor
-</string>
+    <string name="ingridSB">4 cl vodka\n10 cl sodavatten\n2 st limeklyftor </string>
+    <string name="receptHS">1. Skiktas med hjälp av sked. </string>
+    <string name="ingridHS">2,5 cl Galliano \n2,5 cl kaffe, hett \nGrädde, vispad</string>
+    <string name="receptWR">1. Fyll glaset med is. \n2. Häll på vodka och kalúha. \n3. Fyll upp med mjölk och rör om.</string>
+    <string name="ingridWR">Is \n10 cl mjölk \n3 cl vodka \n3 cl Kahlúa</string>
 
 </resources>
