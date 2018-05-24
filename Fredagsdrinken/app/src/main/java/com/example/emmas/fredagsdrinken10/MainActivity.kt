@@ -1,14 +1,13 @@
 package com.example.emmas.fredagsdrinken10
 
 import android.content.Intent
+
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-
-    //val mojligadrinkar: MutableList<String> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent2)
         }
     }
+
 }
 
 

@@ -193,7 +193,7 @@ class meny2 : AppCompatActivity() {
             if (isChecked) {
                 cubalibre = true
                 clingrid++
-                antalclingrid = clingrid.toString() + "/" + 5
+                antalclingrid = clingrid.toString() + "/" + 4
             }
 
 
@@ -224,9 +224,9 @@ class meny2 : AppCompatActivity() {
                 mojito = true
                 cubalibre = true
                 clingrid++
-                antalclingrid = clingrid.toString() + "/" + 5
+                antalclingrid = clingrid.toString() + "/" + 4
                 mojitoingrid++
-                antalmojitoingrid = mojitoingrid.toString() + "/" + 5
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 4
             }
 
 
@@ -239,7 +239,7 @@ class meny2 : AppCompatActivity() {
                 antalsbingrid = sbingrid.toString() + "/" + 3
                 mojito = true
                 mojitoingrid++
-                antalmojitoingrid = mojitoingrid.toString() + "/" + 5
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 4
             }
 
 
@@ -295,7 +295,7 @@ class meny2 : AppCompatActivity() {
                 antalisteingrid = isteingrid.toString() + "/" + 7
                 mojito = true
                 mojitoingrid++
-                antalmojitoingrid = mojitoingrid.toString() + "/" + 5
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 4
             }
 
 
@@ -309,7 +309,7 @@ class meny2 : AppCompatActivity() {
                 isteingrid++
                 antalisteingrid = isteingrid.toString() + "/" + 7
                 clingrid++
-                antalclingrid = clingrid.toString() + "/" + 5
+                antalclingrid = clingrid.toString() + "/" + 4
                 wringrid++
                 antalwringrid = wringrid.toString() + "/" + 4
             }
@@ -333,9 +333,9 @@ class meny2 : AppCompatActivity() {
                 skinnybitch = true
                 mojito = true
                 clingrid++
-                antalclingrid = clingrid.toString() + "/" + 5
+                antalclingrid = clingrid.toString() + "/" + 4
                 mojitoingrid++
-                antalmojitoingrid = mojitoingrid.toString() + "/" + 5
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 4
                 sbingrid++
                 antalsbingrid = sbingrid.toString() + "/" + 3
             }
@@ -358,8 +358,6 @@ class meny2 : AppCompatActivity() {
                 hotshot = true
                 hsingrid++
                 antalhsingrid = hsingrid.toString() + "/" + 3
-                sbingrid++
-                antalsbingrid = sbingrid.toString() + "/" + 3
             }
 
 
