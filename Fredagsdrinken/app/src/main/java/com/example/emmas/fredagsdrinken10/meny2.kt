@@ -93,12 +93,15 @@ class meny2 : AppCompatActivity() {
         Alternativ5.visibility = View.GONE
         Alternativ6.visibility = View.GONE
         Lista.visibility = View.GONE
+        textView11.visibility = View.GONE
+        textView16.visibility = View.GONE
 
         nasta1.setOnClickListener{
             ScrollView1.visibility = View.GONE
             nasta1.visibility = View.GONE
             nasta2.visibility = View.VISIBLE
             textView.visibility = View.GONE
+            textView11.visibility = View.VISIBLE
             //apelsin
             if (checkBox9.isChecked) {
                 iste = true
@@ -288,6 +291,8 @@ class meny2 : AppCompatActivity() {
             textView8.visibility = View.GONE
             textView9.visibility = View.GONE
             textView10.visibility = View.GONE
+            textView11.visibility = View.GONE
+            textView16.visibility = View.VISIBLE
             Lista.visibility = View.VISIBLE
 
 
