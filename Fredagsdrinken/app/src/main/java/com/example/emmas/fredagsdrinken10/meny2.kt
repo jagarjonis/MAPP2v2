@@ -44,6 +44,9 @@ class meny2 : AppCompatActivity() {
     var hotshotrecept = false
     var mojitorecept = false
 
+    //JONAS BOOLS
+    var apelsinbool = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meny2)
@@ -74,12 +77,13 @@ class meny2 : AppCompatActivity() {
             nasta1.visibility = View.GONE
             nasta2.visibility = View.VISIBLE
             textView.visibility = View.GONE
-
+            //apelsin
             if (checkBox9.isChecked) {
                 iste = true
                 isteingrid++
                 antalisteingrid = isteingrid.toString() + "/" + 7
-                println ("Random number between 1-6: " + "${ Random().nextInt((6-1))+1 }")
+                //TILLAGD BOOL
+                apelsinbool = true
 
             }
             if (checkBox10.isChecked) {
@@ -97,13 +101,11 @@ class meny2 : AppCompatActivity() {
                 hsingrid++
                 antalhsingrid = hsingrid.toString() + "/" + 3
             }
-
             if (checkBox13.isChecked) {
                 hotshot = true
                 hsingrid++
                 antalhsingrid = hsingrid.toString() + "/" + 3
             }
-
             if (checkBox14.isChecked) {
                 mojito = true
                 cubalibre = true
@@ -112,7 +114,6 @@ class meny2 : AppCompatActivity() {
                 mojitoingrid++
                 antalmojitoingrid = mojitoingrid.toString() + "/" + 4
             }
-
             if (checkBox15.isChecked) {
                 skinnybitch = true
                 sbingrid++
@@ -257,34 +258,55 @@ class meny2 : AppCompatActivity() {
             Lista.visibility = View.VISIBLE
 
 
-
+            // TESTADE MED APELSINBOOLS
             if (isterecept) {
                 Alternativ1.visibility = View.VISIBLE
-                inkoplista += ("Apelsin")
+                if(!apelsinbool) {
+                    inkoplista += ("Apelsin")
+                }
                 inkoplista += ("Äpple")
+                inkoplista += ("Citron")
+                inkoplista += ("Strösocker")
+                inkoplista += ("Te")
+                //SKIPPADE IS OCH VATTEN
             }
 
             if (cubalibrerecept) {
                 Alternativ2.visibility = View.VISIBLE
-                inkoplista += ("Cubalibre")
-                inkoplista += ("Apelsin")
-                inkoplista += ("Äpple")
+                inkoplista += ("Ljus Rom")
+                inkoplista += ("Coca Cola")
+                inkoplista += ("Lime")
+
             }
 
             if (whiterussianrecept) {
                 Alternativ3.visibility = View.VISIBLE
+                inkoplista += ("Kahlúa")
+                inkoplista += ("Vodka")
+                inkoplista += ("Mjölk")
             }
 
             if (skinnybitchrecept) {
                 Alternativ4.visibility = View.VISIBLE
+                inkoplista += ("Vodka")
+                inkoplista += ("Sodavatten")
+                inkoplista += ("Lime")
             }
 
             if (hotshotrecept) {
                 Alternativ5.visibility = View.VISIBLE
+                inkoplista += ("Kaffe")
+                inkoplista += ("Galliano")
+                inkoplista += ("Grädde")
             }
 
             if (mojitorecept) {
                 Alternativ6.visibility = View.VISIBLE
+                inkoplista += ("Vit Rom")
+                inkoplista += ("Sodavatten")
+                inkoplista += ("Myntablad")
+                inkoplista += ("Lime")
+                inkoplista += ("Strösocker")
             }
 
 
