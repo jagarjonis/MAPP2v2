@@ -1,16 +1,23 @@
 package com.example.emmas.fredagsdrinken10
 
+import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.transition.Slide
+import android.transition.TransitionManager
+import android.view.Gravity
+import android.view.LayoutInflater
 import android.view.View
-import android.widget.CheckBox
+import android.widget.*
 import kotlinx.android.synthetic.main.activity_meny2.*
-import android.widget.TextView
-
 
 
 class meny2 : AppCompatActivity() {
+
+
+    val inkoplista: MutableList<String> = mutableListOf()
     var isteingrid = 0
     var antalisteingrid = ""
     var wringrid = 0
@@ -59,14 +66,171 @@ class meny2 : AppCompatActivity() {
         Alternativ4.visibility = View.GONE
         Alternativ5.visibility = View.GONE
         Alternativ6.visibility = View.GONE
+        Lista.visibility = View.GONE
 
         nasta1.setOnClickListener{
-
             ScrollView1.visibility = View.GONE
             nasta1.visibility = View.GONE
             nasta2.visibility = View.VISIBLE
             textView.visibility = View.GONE
 
+            if (checkBox9.isChecked) {
+                iste = true
+                isteingrid++
+                antalisteingrid = isteingrid.toString() + "/" + 7
+
+            }
+            if (checkBox10.isChecked) {
+                iste = true
+                isteingrid++
+                antalisteingrid = isteingrid.toString() + "/" + 7
+            }
+            if (checkBox11.isChecked) {
+                cubalibre = true
+                clingrid++
+                antalclingrid = clingrid.toString() + "/" + 4
+            }
+            if (checkBox12.isChecked) {
+                hotshot = true
+                hsingrid++
+                antalhsingrid = hsingrid.toString() + "/" + 3
+            }
+
+            if (checkBox13.isChecked) {
+                hotshot = true
+                hsingrid++
+                antalhsingrid = hsingrid.toString() + "/" + 3
+            }
+
+            if (checkBox14.isChecked) {
+                mojito = true
+                cubalibre = true
+                clingrid++
+                antalclingrid = clingrid.toString() + "/" + 4
+                mojitoingrid++
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 4
+            }
+
+            if (checkBox15.isChecked) {
+                skinnybitch = true
+                sbingrid++
+                antalsbingrid = sbingrid.toString() + "/" + 3
+                mojito = true
+                mojitoingrid++
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 4
+            }
+
+            if (checkBox16.isChecked) {
+                iste = true
+                isteingrid++
+                antalisteingrid = isteingrid.toString() + "/" + 7
+            }
+
+            if (checkBox17.isChecked) {
+                whiterussian = true
+                wringrid++
+                antalwringrid = wringrid.toString() + "/" + 4
+                skinnybitch = true
+                sbingrid++
+                antalsbingrid = sbingrid.toString() + "/" + 3
+            }
+
+            if (checkBox18.isChecked) {
+                iste = true
+                isteingrid++
+                antalisteingrid = isteingrid.toString() + "/" + 7
+            }
+
+            if (checkBox19.isChecked) {
+                iste = true
+                isteingrid++
+                antalisteingrid = isteingrid.toString() + "/" + 7
+            }
+
+            if (checkBox20.isChecked) {
+                iste = true
+                isteingrid++
+                antalisteingrid = isteingrid.toString() + "/" + 7
+                mojito = true
+                mojitoingrid++
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 4
+            }
+
+            if (checkBox21.isChecked) {
+                whiterussian = true
+                cubalibre = true
+                iste = true
+                isteingrid++
+                antalisteingrid = isteingrid.toString() + "/" + 7
+                clingrid++
+                antalclingrid = clingrid.toString() + "/" + 4
+                wringrid++
+                antalwringrid = wringrid.toString() + "/" + 4
+            }
+
+            if (checkBox22.isChecked) {
+                whiterussian = true
+                wringrid++
+                antalwringrid = wringrid.toString() + "/" + 4
+            }
+
+            if (checkBox23.isChecked) {
+                cubalibre = true
+                skinnybitch = true
+                mojito = true
+                clingrid++
+                antalclingrid = clingrid.toString() + "/" + 4
+                mojitoingrid++
+                antalmojitoingrid = mojitoingrid.toString() + "/" + 4
+                sbingrid++
+                antalsbingrid = sbingrid.toString() + "/" + 3
+            }
+
+            if (checkBox24.isChecked) {
+                whiterussian = true
+                wringrid++
+                antalwringrid = wringrid.toString() + "/" + 4
+            }
+
+            if (checkBox25.isChecked) {
+                hotshot = true
+                hsingrid++
+                antalhsingrid = hsingrid.toString() + "/" + 3
+            }
+
+            if (iste) {
+                checkBox26.visibility = View.VISIBLE
+                textView5.visibility = View.VISIBLE
+                inkoplista += ("Apelsin")
+                inkoplista += ("Äpple")
+            }
+            if (cubalibre) {
+                checkBox27.visibility = View.VISIBLE
+                textView6.visibility = View.VISIBLE
+                inkoplista += ("Cubalibre")
+                inkoplista += ("Apelsin")
+                inkoplista += ("Äpple")
+            }
+            if (whiterussian) {
+                checkBox28.visibility = View.VISIBLE
+                textView7.visibility = View.VISIBLE
+                inkoplista.add("Whiterussian")
+            }
+            if (skinnybitch) {
+                checkBox29.visibility = View.VISIBLE
+                textView8.visibility = View.VISIBLE
+                inkoplista.add("Sb")
+            }
+            if (hotshot) {
+                checkBox30.visibility = View.VISIBLE
+                textView9.visibility = View.VISIBLE
+                inkoplista.add("Hs")
+            }
+            if (mojito) {
+                checkBox31.visibility = View.VISIBLE
+                textView10.visibility = View.VISIBLE
+                inkoplista.add("Mojito")
+            }
             val textView5 = findViewById(R.id.textView5) as TextView
             textView5.text = (antalisteingrid)
             val textView6 = findViewById(R.id.textView6) as TextView
@@ -80,30 +244,6 @@ class meny2 : AppCompatActivity() {
             val textView10 = findViewById(R.id.textView10) as TextView
             textView10.text = (antalmojitoingrid)
 
-            if (iste) {
-                checkBox26.visibility = View.VISIBLE
-                textView5.visibility = View.VISIBLE
-            }
-            if (cubalibre) {
-                checkBox27.visibility = View.VISIBLE
-                textView6.visibility = View.VISIBLE
-            }
-            if (whiterussian) {
-                checkBox28.visibility = View.VISIBLE
-                textView7.visibility = View.VISIBLE
-            }
-            if (skinnybitch) {
-                checkBox29.visibility = View.VISIBLE
-                textView8.visibility = View.VISIBLE
-            }
-            if (hotshot) {
-                checkBox30.visibility = View.VISIBLE
-                textView9.visibility = View.VISIBLE
-            }
-            if (mojito) {
-                checkBox31.visibility = View.VISIBLE
-                textView10.visibility = View.VISIBLE
-            }
         }
         nasta2.setOnClickListener{
             ScrollView2.visibility = View.GONE
@@ -114,9 +254,13 @@ class meny2 : AppCompatActivity() {
             textView8.visibility = View.GONE
             textView9.visibility = View.GONE
             textView10.visibility = View.GONE
+            Lista.visibility = View.VISIBLE
+
+
 
             if (isterecept) {
                 Alternativ1.visibility = View.VISIBLE
+
             }
 
             if (cubalibrerecept) {
@@ -139,6 +283,27 @@ class meny2 : AppCompatActivity() {
                 Alternativ6.visibility = View.VISIBLE
             }
 
+
+        }
+        Lista.setOnClickListener{
+            val listalength = inkoplista.size
+            val inflater: LayoutInflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            val view = inflater.inflate(R.layout.another_view,null)
+            val popupWindow = PopupWindow(view, LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
+
+            val tv = view.findViewById<TextView>(R.id.textView3)
+            val buttonPopup = view.findViewById<Button>(R.id.button_popup)
+            buttonPopup.setOnClickListener {
+                popupWindow.dismiss()
+            }
+
+            popupWindow.showAtLocation(ScrollView1, Gravity.CENTER,0,0)
+
+            for (i in 0 until listalength)
+                {
+             tv.append(inkoplista[i])
+             tv.append("\n")
+            }
 
         }
         Alternativ1.setOnClickListener{
@@ -166,202 +331,7 @@ class meny2 : AppCompatActivity() {
             startActivity(intent6)
         }
 
-        val checkBox9 = findViewById<CheckBox>(R.id.checkBox9)
-        checkBox9.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
 
-            }
-
-
-        }
-
-        val checkBox10 = findViewById<CheckBox>(R.id.checkBox10)
-        checkBox10.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
-            }
-
-
-        }
-        val checkBox11 = findViewById<CheckBox>(R.id.checkBox11)
-        checkBox11.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                cubalibre = true
-                clingrid++
-                antalclingrid = clingrid.toString() + "/" + 4
-            }
-
-
-        }
-        val checkBox12 = findViewById<CheckBox>(R.id.checkBox12)
-        checkBox12.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                hotshot = true
-                hsingrid++
-                antalhsingrid = hsingrid.toString() + "/" + 3
-            }
-
-
-        }
-        val checkBox13 = findViewById<CheckBox>(R.id.checkBox13)
-        checkBox13.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                hotshot = true
-                hsingrid++
-                antalhsingrid = hsingrid.toString() + "/" + 3
-            }
-
-
-        }
-        val checkBox14 = findViewById<CheckBox>(R.id.checkBox14)
-        checkBox14.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                mojito = true
-                cubalibre = true
-                clingrid++
-                antalclingrid = clingrid.toString() + "/" + 4
-                mojitoingrid++
-                antalmojitoingrid = mojitoingrid.toString() + "/" + 4
-            }
-
-
-        }
-        val checkBox15 = findViewById<CheckBox>(R.id.checkBox15)
-        checkBox15.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                skinnybitch = true
-                sbingrid++
-                antalsbingrid = sbingrid.toString() + "/" + 3
-                mojito = true
-                mojitoingrid++
-                antalmojitoingrid = mojitoingrid.toString() + "/" + 4
-            }
-
-
-        }
-        val checkBox16 = findViewById<CheckBox>(R.id.checkBox16)
-        checkBox16.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
-            }
-
-
-        }
-        val checkBox17 = findViewById<CheckBox>(R.id.checkBox17)
-        checkBox17.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                whiterussian = true
-                wringrid++
-                antalwringrid = wringrid.toString() + "/" + 4
-                skinnybitch = true
-                sbingrid++
-                antalsbingrid = sbingrid.toString() + "/" + 3
-            }
-
-
-        }
-        val checkBox18 = findViewById<CheckBox>(R.id.checkBox18)
-        checkBox18.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
-            }
-
-
-        }
-        val checkBox19 = findViewById<CheckBox>(R.id.checkBox19)
-        checkBox19.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
-            }
-
-
-        }
-        val checkBox20 = findViewById<CheckBox>(R.id.checkBox20)
-        checkBox20.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
-                mojito = true
-                mojitoingrid++
-                antalmojitoingrid = mojitoingrid.toString() + "/" + 4
-            }
-
-
-        }
-        val checkBox21 = findViewById<CheckBox>(R.id.checkBox21)
-        checkBox21.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                whiterussian = true
-                cubalibre = true
-                iste = true
-                isteingrid++
-                antalisteingrid = isteingrid.toString() + "/" + 7
-                clingrid++
-                antalclingrid = clingrid.toString() + "/" + 4
-                wringrid++
-                antalwringrid = wringrid.toString() + "/" + 4
-            }
-
-
-        }
-        val checkBox22 = findViewById<CheckBox>(R.id.checkBox22)
-        checkBox22.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                whiterussian = true
-                wringrid++
-                antalwringrid = wringrid.toString() + "/" + 4
-            }
-
-
-        }
-        val checkBox23 = findViewById<CheckBox>(R.id.checkBox23)
-        checkBox23.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                cubalibre = true
-                skinnybitch = true
-                mojito = true
-                clingrid++
-                antalclingrid = clingrid.toString() + "/" + 4
-                mojitoingrid++
-                antalmojitoingrid = mojitoingrid.toString() + "/" + 4
-                sbingrid++
-                antalsbingrid = sbingrid.toString() + "/" + 3
-            }
-
-
-        }
-        val checkBox24 = findViewById<CheckBox>(R.id.checkBox24)
-        checkBox24.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                whiterussian = true
-                wringrid++
-                antalwringrid = wringrid.toString() + "/" + 4
-            }
-
-
-        }
-        val checkBox25 = findViewById<CheckBox>(R.id.checkBox25)
-        checkBox25.setOnCheckedChangeListener { buttonView, isChecked ->
-            if (isChecked) {
-                hotshot = true
-                hsingrid++
-                antalhsingrid = hsingrid.toString() + "/" + 3
-            }
-
-
-        }
         val checkBox26 = findViewById<CheckBox>(R.id.checkBox26)
         checkBox26.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {

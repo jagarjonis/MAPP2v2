@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#90000000"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inköpslista"
+        android:textColor="#f9ece4"
+        android:textSize="24sp"
+        app:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#f9ece4"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/button_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stäng"
+        />
+
+</LinearLayout>

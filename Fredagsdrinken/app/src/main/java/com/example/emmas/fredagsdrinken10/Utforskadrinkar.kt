@@ -3,7 +3,8 @@ package com.example.emmas.fredagsdrinken10
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_meny2.*
+import kotlinx.android.synthetic.main.activity_utforskadrinkar.*
+
 
 class Utforskadrinkar : AppCompatActivity() {
 
@@ -36,4 +37,5 @@ class Utforskadrinkar : AppCompatActivity() {
             startActivity(intent6)
         }
     }
+
 }
