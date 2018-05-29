@@ -112,21 +112,25 @@ class meny2 : AppCompatActivity() {
                 iste = true
                 isteingrid++
                 antalisteingrid = isteingrid.toString() + "/" + 7
+                citronbool = true
             }
             if (checkBox11.isChecked) {
                 cubalibre = true
                 clingrid++
                 antalclingrid = clingrid.toString() + "/" + 4
+                cocacolabool = true
             }
             if (checkBox12.isChecked) {
                 hotshot = true
                 hsingrid++
                 antalhsingrid = hsingrid.toString() + "/" + 3
+                gallianobool = true
             }
             if (checkBox13.isChecked) {
                 hotshot = true
                 hsingrid++
                 antalhsingrid = hsingrid.toString() + "/" + 3
+                graddebool = true
             }
             if (checkBox14.isChecked) {
                 mojito = true
@@ -135,6 +139,7 @@ class meny2 : AppCompatActivity() {
                 antalclingrid = clingrid.toString() + "/" + 4
                 mojitoingrid++
                 antalmojitoingrid = mojitoingrid.toString() + "/" + 4
+                ljusrombool = true
             }
             if (checkBox15.isChecked) {
                 skinnybitch = true
@@ -143,12 +148,14 @@ class meny2 : AppCompatActivity() {
                 mojito = true
                 mojitoingrid++
                 antalmojitoingrid = mojitoingrid.toString() + "/" + 4
+                sodavattenbool = true
             }
 
             if (checkBox16.isChecked) {
                 iste = true
                 isteingrid++
                 antalisteingrid = isteingrid.toString() + "/" + 7
+                tebool = true
             }
 
             if (checkBox17.isChecked) {
@@ -158,12 +165,14 @@ class meny2 : AppCompatActivity() {
                 skinnybitch = true
                 sbingrid++
                 antalsbingrid = sbingrid.toString() + "/" + 3
+                vodkabool = true
             }
 
             if (checkBox18.isChecked) {
                 iste = true
                 isteingrid++
                 antalisteingrid = isteingrid.toString() + "/" + 7
+                applebool = true
             }
 
             if (checkBox19.isChecked) {
@@ -179,6 +188,7 @@ class meny2 : AppCompatActivity() {
                 mojito = true
                 mojitoingrid++
                 antalmojitoingrid = mojitoingrid.toString() + "/" + 4
+                strosockerbool = true
             }
 
             if (checkBox21.isChecked) {
@@ -191,12 +201,14 @@ class meny2 : AppCompatActivity() {
                 antalclingrid = clingrid.toString() + "/" + 4
                 wringrid++
                 antalwringrid = wringrid.toString() + "/" + 4
+
             }
 
             if (checkBox22.isChecked) {
                 whiterussian = true
                 wringrid++
                 antalwringrid = wringrid.toString() + "/" + 4
+                mjolkbool = true
             }
 
             if (checkBox23.isChecked) {
@@ -209,18 +221,21 @@ class meny2 : AppCompatActivity() {
                 antalmojitoingrid = mojitoingrid.toString() + "/" + 4
                 sbingrid++
                 antalsbingrid = sbingrid.toString() + "/" + 3
+                limebool = true
             }
 
             if (checkBox24.isChecked) {
                 whiterussian = true
                 wringrid++
                 antalwringrid = wringrid.toString() + "/" + 4
+                kahluabool = true
             }
 
             if (checkBox25.isChecked) {
                 hotshot = true
                 hsingrid++
                 antalhsingrid = hsingrid.toString() + "/" + 3
+                kaffebool = true
 
             }
 
@@ -280,56 +295,72 @@ class meny2 : AppCompatActivity() {
             if (isterecept) {
                 Alternativ1.visibility = View.VISIBLE
                 if(!apelsinbool) {
-                    inkoplista += ("Apelsin")
+                    istelista += ("Apelsin")
                 }
 
                 if (!applebool) {
-
-
+                    istelista += ("Äpple")
                 }
-                inkoplista += ("Äpple")
-                inkoplista += ("Citron")
-                inkoplista += ("Strösocker")
-                inkoplista += ("Te")
+
+                if (!citronbool) {
+                    istelista += ("Citron")
+                }
+
+                if (!strosockerbool) {
+                    istelista +=("Strösocker")
+                }
+
+                if (!tebool) {
+                    istelista +=("Te")
+                }
                 //SKIPPADE IS OCH VATTEN
             }
 
             if (cubalibrerecept) {
                 Alternativ2.visibility = View.VISIBLE
-                inkoplista += ("Ljus Rom")
-                inkoplista += ("Coca Cola")
-                inkoplista += ("Lime")
+
+                if (!ljusrombool) {
+                    cllista += ("Ljus Rom")
+                }
+
+                if(!cocacolabool) {
+                    cllista += ("Coca Cola")
+                }
+
+                if(!limebool) {
+                    cllista += ("Lime")
+                }
 
             }
 
             if (whiterussianrecept) {
                 Alternativ3.visibility = View.VISIBLE
-                inkoplista += ("Kahlúa")
+              /*  inkoplista += ("Kahlúa")
                 inkoplista += ("Vodka")
-                inkoplista += ("Mjölk")
+                inkoplista += ("Mjölk") */
             }
 
             if (skinnybitchrecept) {
                 Alternativ4.visibility = View.VISIBLE
-                inkoplista += ("Vodka")
+              /*  inkoplista += ("Vodka")
                 inkoplista += ("Sodavatten")
-                inkoplista += ("Lime")
+                inkoplista += ("Lime") */
             }
 
             if (hotshotrecept) {
                 Alternativ5.visibility = View.VISIBLE
-                inkoplista += ("Kaffe")
+               /* inkoplista += ("Kaffe")
                 inkoplista += ("Galliano")
-                inkoplista += ("Grädde")
+                inkoplista += ("Grädde") */
             }
 
             if (mojitorecept) {
                 Alternativ6.visibility = View.VISIBLE
-                inkoplista += ("Vit Rom")
+               /* inkoplista += ("Vit Rom")
                 inkoplista += ("Sodavatten")
                 inkoplista += ("Myntablad")
                 inkoplista += ("Lime")
-                inkoplista += ("Strösocker")
+                inkoplista += ("Strösocker") */
             }
 
 
@@ -357,6 +388,12 @@ class meny2 : AppCompatActivity() {
                 {
              tv.append(istelista[i])
              tv.append("\n")
+            }
+
+            for (i in 0 until cllength)
+            {
+                tv.append(cllista[i])
+                tv.append("\n")
             }
 
         }
