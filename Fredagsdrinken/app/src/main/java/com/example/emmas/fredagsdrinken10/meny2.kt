@@ -415,42 +415,42 @@ class meny2 : AppCompatActivity() {
             popupWindow.showAtLocation(ScrollView1, Gravity.CENTER,0,0)
 
             if (isterecept) {
-                tv.append("\n" + "För Iste Från Södern behöver du:" + "\n")
+                tv.append("\n" + "För Iste Från Södern:" + "\n")
                 for (i in 0 until istelength) {
                     tv.append(istelista[i])
                     tv.append("\n")
                 }
             }
             if (cubalibrerecept) {
-                tv.append("\n" + "För Cuba Libre behöver du:" + "\n")
+                tv.append("\n" + "För Cuba Libre:" + "\n")
                 for (i in 0 until cllength) {
                     tv.append(cllista[i])
                     tv.append("\n")
                 }
             }
             if (whiterussianrecept) {
-                tv.append("\n" + "För White Russian behöver du:" + "\n")
+                tv.append("\n" + "För White Russian:" + "\n")
                 for (i in 0 until wrlength) {
                     tv.append(wrlista[i])
                     tv.append("\n")
                 }
             }
             if (skinnybitchrecept) {
-                tv.append("\n" + "För Skinny Bitch behöver du:" + "\n")
+                tv.append("\n" + "För Skinny Bitch:" + "\n")
                 for (i in 0 until sblength) {
                     tv.append(sblista[i])
                     tv.append("\n")
                 }
             }
             if (hotshotrecept) {
-                tv.append("\n" + "För Hot Shots behöver du:" + "\n")
+                tv.append("\n" + "För Hot Shots:" + "\n")
                 for (i in 0 until hslength) {
                     tv.append(hslista[i])
                     tv.append("\n")
                 }
             }
             if (mojitorecept) {
-                tv.append("\n" + "För Mojito behöver du:" + "\n")
+                tv.append("\n" + "För Mojito:" + "\n")
                 for (i in 0 until mojitolength) {
                     tv.append(mojitolista[i])
                     tv.append("\n")
