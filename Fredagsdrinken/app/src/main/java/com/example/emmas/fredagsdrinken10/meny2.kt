@@ -438,7 +438,7 @@ class meny2 : AppCompatActivity() {
                 }
             }
             if (hotshotrecept) {
-                tv.append("För White Russian behöver du:" + "\n")
+                tv.append("För Hot shots behöver du:" + "\n")
                 for (i in 0 until hslength) {
                     tv.append(hslista[i])
                     tv.append("\n")
