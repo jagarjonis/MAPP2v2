@@ -12,6 +12,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.*
 import kotlinx.android.synthetic.main.activity_meny2.*
+import java.util.*
 
 
 class meny2 : AppCompatActivity() {
@@ -78,6 +79,7 @@ class meny2 : AppCompatActivity() {
                 iste = true
                 isteingrid++
                 antalisteingrid = isteingrid.toString() + "/" + 7
+                println ("Random number between 1-6: " + "${ Random().nextInt((6-1))+1 }")
 
             }
             if (checkBox10.isChecked) {
@@ -196,20 +198,18 @@ class meny2 : AppCompatActivity() {
                 hotshot = true
                 hsingrid++
                 antalhsingrid = hsingrid.toString() + "/" + 3
+
             }
 
             if (iste) {
                 checkBox26.visibility = View.VISIBLE
                 textView5.visibility = View.VISIBLE
-                inkoplista += ("Apelsin")
-                inkoplista += ("Äpple")
+
             }
             if (cubalibre) {
                 checkBox27.visibility = View.VISIBLE
                 textView6.visibility = View.VISIBLE
-                inkoplista += ("Cubalibre")
-                inkoplista += ("Apelsin")
-                inkoplista += ("Äpple")
+
             }
             if (whiterussian) {
                 checkBox28.visibility = View.VISIBLE
@@ -260,11 +260,15 @@ class meny2 : AppCompatActivity() {
 
             if (isterecept) {
                 Alternativ1.visibility = View.VISIBLE
-
+                inkoplista += ("Apelsin")
+                inkoplista += ("Äpple")
             }
 
             if (cubalibrerecept) {
                 Alternativ2.visibility = View.VISIBLE
+                inkoplista += ("Cubalibre")
+                inkoplista += ("Apelsin")
+                inkoplista += ("Äpple")
             }
 
             if (whiterussianrecept) {
