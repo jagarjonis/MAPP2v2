@@ -318,49 +318,74 @@ class meny2 : AppCompatActivity() {
 
             if (cubalibrerecept) {
                 Alternativ2.visibility = View.VISIBLE
-
                 if (!ljusrombool) {
                     cllista += ("Ljus Rom")
                 }
-
                 if(!cocacolabool) {
                     cllista += ("Coca Cola")
                 }
-
                 if(!limebool) {
                     cllista += ("Lime")
                 }
-
             }
 
             if (whiterussianrecept) {
                 Alternativ3.visibility = View.VISIBLE
-              /*  inkoplista += ("Kahlúa")
-                inkoplista += ("Vodka")
-                inkoplista += ("Mjölk") */
+                if (!kahluabool) {
+                    wrlista += ("Kahlúa")
+                }
+                if(!vodkabool) {
+                    wrlista += ("Vodka")
+                }
+                if(!mjolkbool) {
+                    wrlista += ("Mjölk")
+                }
             }
 
             if (skinnybitchrecept) {
                 Alternativ4.visibility = View.VISIBLE
-              /*  inkoplista += ("Vodka")
-                inkoplista += ("Sodavatten")
-                inkoplista += ("Lime") */
+
+                if (!vodkabool) {
+                    sblista += ("Vodka")
+                }
+                if (!sodavattenbool) {
+                    sblista += ("Sodavatten")
+                }
+                if (!limebool) {
+                    sblista += ("Lime")
+                }
             }
 
             if (hotshotrecept) {
                 Alternativ5.visibility = View.VISIBLE
-               /* inkoplista += ("Kaffe")
-                inkoplista += ("Galliano")
-                inkoplista += ("Grädde") */
+                if (!kaffebool) {
+                    hslista += ("Kaffe")
+                }
+                if (!gallianobool) {
+                    hslista += ("Galliano")
+                }
+                if (!graddebool) {
+                    hslista += ("Grädde")
+                }
             }
 
             if (mojitorecept) {
                 Alternativ6.visibility = View.VISIBLE
-               /* inkoplista += ("Vit Rom")
-                inkoplista += ("Sodavatten")
-                inkoplista += ("Myntablad")
-                inkoplista += ("Lime")
-                inkoplista += ("Strösocker") */
+                if (!vitrombool) {
+                    mojitolista += ("Vit Rom")
+                }
+                if (!sodavattenbool) {
+                    mojitolista += ("Sodavatten")
+                }
+                if (!myntabladbool) {
+                    mojitolista += ("Myntablad")
+                }
+                if (!limebool) {
+                    mojitolista += ("Lime")
+                }
+                if (!strosockerbool) {
+                    mojitolista += ("Strösocker")
+                }
             }
 
 
