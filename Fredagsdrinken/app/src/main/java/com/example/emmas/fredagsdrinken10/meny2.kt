@@ -18,7 +18,12 @@ import java.util.*
 class meny2 : AppCompatActivity() {
 
 
-    val inkoplista: MutableList<String> = mutableListOf()
+    val istelista: MutableList<String> = mutableListOf()
+    val wrlista: MutableList<String> = mutableListOf()
+    val cllista: MutableList<String> = mutableListOf()
+    val sblista: MutableList<String> = mutableListOf()
+    val hslista: MutableList<String> = mutableListOf()
+    val mojitolista: MutableList<String> = mutableListOf()
     var isteingrid = 0
     var antalisteingrid = ""
     var wringrid = 0
@@ -215,22 +220,18 @@ class meny2 : AppCompatActivity() {
             if (whiterussian) {
                 checkBox28.visibility = View.VISIBLE
                 textView7.visibility = View.VISIBLE
-                inkoplista.add("Whiterussian")
             }
             if (skinnybitch) {
                 checkBox29.visibility = View.VISIBLE
                 textView8.visibility = View.VISIBLE
-                inkoplista.add("Sb")
             }
             if (hotshot) {
                 checkBox30.visibility = View.VISIBLE
                 textView9.visibility = View.VISIBLE
-                inkoplista.add("Hs")
             }
             if (mojito) {
                 checkBox31.visibility = View.VISIBLE
                 textView10.visibility = View.VISIBLE
-                inkoplista.add("Mojito")
             }
             val textView5 = findViewById(R.id.textView5) as TextView
             textView5.text = (antalisteingrid)
@@ -312,7 +313,12 @@ class meny2 : AppCompatActivity() {
 
         }
         Lista.setOnClickListener{
-            val listalength = inkoplista.size
+            val istelength = istelista.size
+            val wrlength = wrlista.size
+            val cllength = cllista.size
+            val sblength = sblista.size
+            val hslength = hslista.size
+            val mojitolength = mojitolista.size
             val inflater: LayoutInflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             val view = inflater.inflate(R.layout.another_view,null)
             val popupWindow = PopupWindow(view, LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
@@ -324,10 +330,10 @@ class meny2 : AppCompatActivity() {
             }
 
             popupWindow.showAtLocation(ScrollView1, Gravity.CENTER,0,0)
-
-            for (i in 0 until listalength)
+            
+            for (i in 0 until istelength)
                 {
-             tv.append(inkoplista[i])
+             tv.append(istelista[i])
              tv.append("\n")
             }
 
