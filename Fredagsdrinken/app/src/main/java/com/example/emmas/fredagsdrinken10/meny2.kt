@@ -383,17 +383,48 @@ class meny2 : AppCompatActivity() {
             }
 
             popupWindow.showAtLocation(ScrollView1, Gravity.CENTER,0,0)
-            
-            for (i in 0 until istelength)
-                {
-             tv.append(istelista[i])
-             tv.append("\n")
-            }
 
-            for (i in 0 until cllength)
-            {
-                tv.append(cllista[i])
-                tv.append("\n")
+            if (isterecept) {
+                tv.append("För Iste från Södern behöver du:" + "\n")
+                for (i in 0 until istelength) {
+                    tv.append(istelista[i])
+                    tv.append("\n")
+                }
+            }
+            if (cubalibrerecept) {
+                tv.append("För Cuba Libre behöver du:" + "\n")
+                for (i in 0 until cllength) {
+                    tv.append(cllista[i])
+                    tv.append("\n")
+                }
+            }
+            if (whiterussianrecept) {
+                tv.append("För White Russian behöver du:" + "\n")
+                for (i in 0 until wrlength) {
+                    tv.append(wrlista[i])
+                    tv.append("\n")
+                }
+            }
+            if (skinnybitchrecept) {
+                tv.append("För Skinny Bitch behöver du:" + "\n")
+                for (i in 0 until sblength) {
+                    tv.append(sblista[i])
+                    tv.append("\n")
+                }
+            }
+            if (hotshotrecept) {
+                tv.append("För White Russian behöver du:" + "\n")
+                for (i in 0 until hslength) {
+                    tv.append(hslista[i])
+                    tv.append("\n")
+                }
+            }
+            if (mojitorecept) {
+                tv.append("För Mojito behöver du:" + "\n")
+                for (i in 0 until mojitolength) {
+                    tv.append(mojitolista[i])
+                    tv.append("\n")
+                }
             }
 
         }
