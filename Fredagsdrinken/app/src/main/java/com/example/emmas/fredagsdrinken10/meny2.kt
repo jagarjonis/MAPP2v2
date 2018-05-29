@@ -410,7 +410,7 @@ class meny2 : AppCompatActivity() {
             popupWindow.showAtLocation(ScrollView1, Gravity.CENTER,0,0)
 
             if (isterecept) {
-                tv.append("\n" + "För Iste från Södern behöver du:" + "\n")
+                tv.append("\n" + "För Iste Från Södern behöver du:" + "\n")
                 for (i in 0 until istelength) {
                     tv.append(istelista[i])
                     tv.append("\n")
@@ -438,7 +438,7 @@ class meny2 : AppCompatActivity() {
                 }
             }
             if (hotshotrecept) {
-                tv.append("\n" + "För Hot shots behöver du:" + "\n")
+                tv.append("\n" + "För Hot Shots behöver du:" + "\n")
                 for (i in 0 until hslength) {
                     tv.append(hslista[i])
                     tv.append("\n")
