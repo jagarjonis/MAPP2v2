@@ -45,7 +45,24 @@ class meny2 : AppCompatActivity() {
     var mojitorecept = false
 
     //JONAS BOOLS
+    var limebool = false
+    var cocacolabool = false
+    var ljusrombool = false
+    var mjolkbool = false
+    var vodkabool = false
+    var kahluabool = false
+    var sodavattenbool = false
+    var gallianobool = false
+    var kaffebool = false
+    var graddebool = false
+    var tebool = false
+    var strosockerbool = false
+    var citronbool = false
     var apelsinbool = false
+    var applebool = false
+    var vitrombool = false
+    var myntabladbool = false
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -263,6 +280,11 @@ class meny2 : AppCompatActivity() {
                 Alternativ1.visibility = View.VISIBLE
                 if(!apelsinbool) {
                     inkoplista += ("Apelsin")
+                }
+
+                if (!applebool) {
+
+
                 }
                 inkoplista += ("Äpple")
                 inkoplista += ("Citron")
