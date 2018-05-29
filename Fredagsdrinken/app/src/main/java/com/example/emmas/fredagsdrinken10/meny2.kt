@@ -438,7 +438,11 @@ class meny2 : AppCompatActivity() {
                 }
             }
             if (hotshotrecept) {
+<<<<<<< HEAD
                 tv.append("\n" + "För Hotshot behöver du:" + "\n")
+=======
+                tv.append("För Hot shots behöver du:" + "\n")
+>>>>>>> a5a7c0df89073d196ca2a7c15136f19d163a81c3
                 for (i in 0 until hslength) {
                     tv.append(hslista[i])
                     tv.append("\n")
